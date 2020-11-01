@@ -4,17 +4,14 @@ import PropTypes from 'prop-types';
 
 const Form = ( {search, setSearch, setRequest} ) => {
 
-
     const [ error, setError ] = useState(false);
 
     // get city and country to put in input value - destructuring 
     const { city, country } = search;
 
-
-
     // function for put the elements in the state
     const handleChange = e => {
-        // actualizar el state
+        // actualize the state
         setSearch({
             ...search,
             [e.target.name] : e.target.value
@@ -33,8 +30,6 @@ const Form = ( {search, setSearch, setRequest} ) => {
          // pass to component 
         setRequest(true);
     }
-
-   
 
     return (
         <form onSubmit={handleSubmit} >
@@ -70,11 +65,11 @@ const Form = ( {search, setSearch, setRequest} ) => {
             </div>
 
             <div className="input-field col s12">
-                <input
+                <button
                 type="submit"
                 value="Search Weather"
                 className="waves-effect waves-light btn-large btn-block yellow accent-4"
-                />
+                >Search Weather</button>
             </div>
         </form>
     )

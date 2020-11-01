@@ -56,7 +56,6 @@ useEffect( () => {
         <Header
           title="Weather App"
         />
-
         <div className="container-form">
           <div className="container">
             <div className="row">
@@ -67,7 +66,6 @@ useEffect( () => {
                   setRequest={setRequest}
                   />
               </div>
-
               <div className="col m6 s12">
                {component}
               </div>

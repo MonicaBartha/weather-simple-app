@@ -5,10 +5,10 @@ const Error = ( {message} ) => {
     return ( 
     <p className="red darken-4 error">{message}</p> 
     );
-
 }
 
 Error.propTypes = {
     message: PropTypes.string.isRequired
 }
+
 export default Error;
